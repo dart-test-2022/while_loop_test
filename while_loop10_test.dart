@@ -1,7 +1,6 @@
 import 'package:test/test.dart';
 import '../bin/while_loop10.dart' as loop;
 
-@Timeout(Duration(seconds: 1))
 void main() {
   group('test 10', () {
     test('while loop 10', () {
@@ -12,6 +11,6 @@ void main() {
     });
     test('while loop 10', () {
       expect(loop.func(51), "tub son");
-    });
+    }, timeout: Timeout(Duration(minutes: 1)));
   });
 }
