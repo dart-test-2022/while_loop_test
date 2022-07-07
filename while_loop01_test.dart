@@ -1,6 +1,7 @@
 import 'package:test/test.dart';
 import '../bin/while_loop01.dart' as loop;
 
+@Timeout(Duration(seconds: 45))
 void main() {
   test('while loop 01', () {
     expect(loop.func(20), equals(equal(20)));
