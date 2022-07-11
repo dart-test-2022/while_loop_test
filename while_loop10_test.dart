@@ -10,7 +10,7 @@ void main() {
       expect(loop.func(8), "tub son emas");
     });
     test('while loop 10', () {
-      expect(loop.func(51), "tub son");
+      expect(loop.func(51), "tub son emas");
     }, timeout: Timeout(Duration(minutes: 1)));
   });
 }
