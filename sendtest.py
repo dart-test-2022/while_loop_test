@@ -6,7 +6,7 @@ import argparse
 
 url = 'https://codeschoolhomeworkapi.pythonanywhere.com/'
 
-f = open('data.json', 'r')
+f = open('test/data.json', 'r')
 data = json.load(f)
 pprint(data)
 parser = argparse.ArgumentParser()
