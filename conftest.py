@@ -1,6 +1,6 @@
 import json
 
-with open('tests.json', 'r') as f:
+with open('test/tests.json', 'r') as f:
 
     tests = {}
     tests_id = {}
