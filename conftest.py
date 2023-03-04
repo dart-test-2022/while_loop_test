@@ -51,6 +51,6 @@ for task_name in keys:
         dct['isSolved'] = False
     lst.append(dct)
 
-with open('data.json', 'w') as f1:
+with open('test/data.json', 'w') as f1:
     json.dump(lst, f1, indent=4, separators=(',', ':'))
     print('finish')
