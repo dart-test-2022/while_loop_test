@@ -29,9 +29,9 @@ while i < len(data):
 
 dct = {
     "github": arg.github,
-    "repo": arg.repo,
     "tasks": tasks,
-    "lan": "Dart Foundation"
+    "course": "Dart Foundation",
+    "assignment": arg.repo.split("/")[-1]
 }
 pprint(dct)
 f.close()
