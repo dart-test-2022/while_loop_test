@@ -6,7 +6,6 @@ with open('tests.json', 'r') as f:
     tests_id = {}
     bad_id = []
 
-    print(f.read())
     for line in f.readlines():
         jline = json.loads(line)
 
@@ -51,7 +50,7 @@ for task_name in keys:
         dct['isSolved'] = False
     lst.append(dct)
 
-print(lst)
+print(tests)
 with open('data.json', 'w') as f1:
     json.dump(lst, f1, indent=4, separators=(',', ':'))
     print('finish')
