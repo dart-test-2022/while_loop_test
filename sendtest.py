@@ -4,7 +4,7 @@ import json
 from pprint import pprint
 import argparse
 
-url = 'https://codeschoolhomeworkapi.pythonanywhere.com/'
+url = 'http://codeschooluzapi.pythonanywhere.com/lesson/'
 
 f = open('data.json', 'r')
 data = json.load(f)
@@ -36,7 +36,7 @@ dct = {
 pprint(dct)
 f.close()
 pprint(dct)
-r = requests.post(url+'homework/attempt/', json=dct)
+r = requests.post(url+'submission/add/', json=dct)
 print(r.status_code)
 
 
