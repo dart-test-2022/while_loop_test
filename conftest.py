@@ -49,6 +49,7 @@ for task_name in keys:
     else:
         dct['isSolved'] = False
     lst.append(dct)
+    print(dct)
 
 print(tests)
 with open('data.json', 'w') as f1:
