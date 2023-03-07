@@ -21,7 +21,7 @@ print(arg.changed_files)
 tasks = []
 i = 0
 while i < len(data):
-    data[i]['name'] = data[i]['name'][-10:]
+    data[i]['name'] = data[i]['name'][:-10]
     if data[i]['name'] in arg.changed_files:
         tasks.append(data[i])
 
