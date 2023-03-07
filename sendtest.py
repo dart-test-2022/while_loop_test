@@ -56,11 +56,11 @@ for task in data:
         print(f'{task["name"]}  Passed:{task["details"]["passed"]} Failed:{task["details"]["failed"]} ❌')
 
  
-# Check if all tasks are solved otherwise raise error
-# if corrects == len(data):
-#     print('All tasks are solved')
-#     print('Barcha vazifalar topshirildi')
-# else:
-#     print('Not all tasks are solved')
-#     print('Barcha vazifalar topshirilmagan')
-#     sys.exit(1)
+Check if all tasks are solved otherwise raise error
+if corrects == len(data) and len(data) == 10:
+    print('All tasks are solved')
+    print('Barcha vazifalar topshirildi')
+else:
+    print('Not all tasks are solved')
+    print('Barcha vazifalar topshirilmagan')
+    sys.exit(1)
