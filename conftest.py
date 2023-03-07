@@ -6,7 +6,7 @@ with open('tests.json', 'r') as f:
     tests_id = {}
     bad_id = []
 
-
+    print(f.read())
     for line in f.readlines():
         jline = json.loads(line)
 
